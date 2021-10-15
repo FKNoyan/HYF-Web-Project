@@ -786,6 +786,12 @@ td {
   display: inline-block;
 }
 
+/* Değişim 23.11''    Yarın 16.10.21'de bu yapılan değişiklikler refactor edilecek.*/
+
+.title-img-mobile {
+  display: none;
+}
+
 /* Media Quaries */
 @media screen and (max-width: 960px) {
   * {
@@ -872,10 +878,34 @@ td {
     border: 0;
   }
 
-  /* DENEME 22.47
-  .download-section h1 {
+  /* DENEME 22.47  */
+
+  .title-img {
     display: none;
-  } */
+  }
+
+  .title-img-mobile {
+    display: inline-block;
+    width: 300px;
+    margin-bottom: 1rem;
+  }
+
+  #title-section {
+    padding-top: 2rem;
+  }
+
+  .download-section {
+    gap: 1rem;
+  }
+
+  .download-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .download-section p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem !important;
+  }
 }
 
 .anchor-els {
