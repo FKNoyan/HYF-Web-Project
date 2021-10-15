@@ -1,14 +1,17 @@
 const hamburger = document.getElementById("hamburger");
-const navItems = document.getElementById("anchor-els");
+const anchorEls = document.getElementById("anchor-els");
 const logo = document.getElementById("logo");
 const navContainer = document.getElementById("navbar-container");
 const hamburgerIcon = document.getElementById("hamburger-icon");
 
 hamburger.addEventListener("click", function () {
-  navItems.classList.toggle("show");
-  logo.classList.toggle("hide");
-  navContainer.classList.toggle("display");
   hamburgerIcon.classList.toggle("rotate");
+
+  setTimeout(() => {
+    navContainer.classList.toggle("display");
+    anchorEls.classList.toggle("show");
+    logo.classList.toggle("hide");
+  }, 500);
 });
 
 function fading() {
